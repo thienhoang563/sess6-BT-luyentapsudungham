@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var tratu = prompt("Nhập chòm sao :");
+    var star1= ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    var star2= ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function replaceStar() {
+        var check = true;
+        for (var i=0;i < star1.length;i++){
+            if (tratu === star1[i]){
+                alert(star2[i]);
+                check = false;
+            }
+        }
+        if (check == true){
+            alert("Khong co chom sao nay");
+        }
+
+    }
+replaceStar();
+</script>
+</body>
+</html>
